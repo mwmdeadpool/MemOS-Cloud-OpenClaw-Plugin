@@ -1,7 +1,7 @@
 {
-  "name": "@memtensor/memos-cloud-openclaw-plugin",
-  "version": "0.1.15",
-  "description": "OpenClaw lifecycle plugin for MemOS Cloud (add + recall memory)",
+  "name": "@mwmdeadpool/memos-openclaw-plugin",
+  "version": "0.2.0",
+  "description": "OpenClaw lifecycle plugin for self-hosted MemOS (add + recall memory). Forked from @memtensor/memos-cloud-openclaw-plugin.",
   "scripts": {
     "sync-version": "node scripts/sync-version.js",
     "version": "npm run sync-version && git add openclaw.plugin.json moltbot.plugin.json clawdbot.plugin.json",
@@ -17,13 +17,13 @@
     "plugin",
     "memory"
   ],
-  "homepage": "https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin#readme",
+  "homepage": "https://github.com/mwmdeadpool/MemOS-Cloud-OpenClaw-Plugin#readme",
   "bugs": {
-    "url": "https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin/issues"
+    "url": "https://github.com/mwmdeadpool/MemOS-Cloud-OpenClaw-Plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin.git"
+    "url": "git+https://github.com/mwmdeadpool/MemOS-Cloud-OpenClaw-Plugin.git"
   },
   "type": "module",
   "author": "MemTensor",
