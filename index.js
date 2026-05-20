@@ -434,9 +434,9 @@ async function maybeFilterRecallData(cfg, data, userPrompt, log, ctx) {
 }
 
 export default {
-  id: "memos-cloud-openclaw-plugin",
-  name: "MemOS Cloud OpenClaw Plugin",
-  description: "MemOS Cloud recall + add memory via lifecycle hooks",
+  id: "memos-openclaw-plugin",
+  name: "MemOS OpenClaw Plugin",
+  description: "Self-hosted MemOS recall + add memory via lifecycle hooks",
   kind: "lifecycle",
 
   register(api) {
