@@ -538,10 +538,6 @@ export default {
       if (!agentCfg.recallEnabled) return;
       const userPrompt = stripOpenClawInjectedPrefix(event?.prompt || "");
       if (!userPrompt || userPrompt.length < 3) return;
-      if (!agentCfg.apiKey) {
-        warnMissingApiKey(log, "recall");
-        return;
-      }
 
       try {
         const payload = buildSearchPayload(agentCfg, userPrompt, ctx);
@@ -571,10 +567,6 @@ export default {
       const agentCfg = resolveAgentConfig(cfg, ctx?.agentId);
       if (!agentCfg.addEnabled) return;
       if (!event?.success || !event?.messages?.length) return;
-      if (!agentCfg.apiKey) {
-        warnMissingApiKey(log, "add");
-        return;
-      }
 
       const now = Date.now();
       if (agentCfg.throttleMs && now - lastCaptureTime < agentCfg.throttleMs) {
