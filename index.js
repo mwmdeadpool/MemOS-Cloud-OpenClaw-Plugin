@@ -173,7 +173,7 @@ export function buildAddMessagePayload(cfg, messages, ctx) {
 
   payload.allow_public = cfg.allowPublic;
   if (cfg.allowKnowledgebaseIds?.length) payload.allow_knowledgebase_ids = cfg.allowKnowledgebaseIds;
-  payload.async_mode = cfg.asyncMode;
+  payload.async_mode = cfg.asyncMode ? "async" : "sync";
 
   return payload;
 }
